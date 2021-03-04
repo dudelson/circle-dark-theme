@@ -1,0 +1,163 @@
+/* ==UserStyle==
+ * @name           Circle Dark
+ * @namespace      github.com/dudelson/circle-dark-theme
+ * @version        0.1.0
+ * @description    A dark theme for circle.so
+ * @author         David Udelson
+ * @updateURL      https://github.com/dudelson/circle-dark-theme/circle-dark.user.css
+ * ==/UserStyle== */
+
+@-moz-document domain("circle.so") {
+    :root {
+        /* mine */
+        --dark-0: #181818;
+        --dark-1: #333333;
+        --dark-2: #454545;
+
+        /* theirs */
+        --lightest: #1f3247;
+        --lighter: #455163;
+        --light: #8e9caf;
+        --neutral: #c8d2df;
+        --dark: #e8ebf2;
+        --darker: #f9fbfb;
+
+        /*--brand: #5a2b81;*/
+        --brand: #9262ba;
+
+        --text-body: white;
+        --text-body-100: white;
+        /* this should come from --text-body */
+        --text-secondary: #bcbcbc;
+        --background-primary: var(--dark-0);
+        --background-body: var(--dark-0);
+        --background-brand: var(--dark-0);
+
+        --search-bar-background: var(--background-body);
+
+        /* one-offs */
+        --post-post-background: var(--dark-1);
+        --new-notification-bg: var(--dark-1);
+        --input-background: var(--dark-0);
+        --search-autocomplete-background: var(--dark-1);
+        --neutral-highlight: var(--lighter);
+        --neutral-highlight-hover: var(--lightest);
+        --dropdown-background: var(--dark-1);
+    }
+
+    body {
+        color: var(--text-body);
+    }
+
+    .header {
+        background: var(--dark-1);
+    }
+
+    .view-space .standard-layout .main__header {
+        background: var(--dark-1);
+    }
+
+    .post {
+        background: var(--post-post-background);
+    }
+
+    .post__actions {
+        background: var(--post-post-background);
+    }
+
+    .view-post .post__reply {
+        background-color: var(--dark-1);
+    }
+
+    .post__comments .load-more .load-more__replies {
+        background-color: var(--dark-1);
+    }
+
+    .view-post .post__reply.reply-to-parent {
+        background-color: var(--dark-1);
+    }
+
+    .view-space .post__reply {
+        background-color: var(--dark-1);
+    }
+
+    .trix-v2 .post__reply .react-trix-editor-container .comment-box__bar.expanded {
+        background-color: var(--dark-0);
+    }
+
+
+    .trix-v2 .react-trix-editor-container trix-editor {
+        color: var(--text-secondary);    
+    }
+
+    .trix-v2 .trix-content {
+        color: white;
+    }
+
+    .standard-layout.has-sidebar .form-wrapper .form-content {
+        background: var(--dark-1);
+    }
+
+    .notifications__header {
+        background-color: var(--dark-1);
+    }
+
+    .notifications__row {
+        background-color: var(--dark-1);
+    }
+
+    .notifications__details {
+        color: var(--text-secondary);
+    }
+
+    .notifications__name {
+        color: var(--text-body);
+    }
+
+    .notifications__title {
+        color: var(--text-body);
+    }
+
+    .notifications__footer {
+        background-color: var(--dark-1);
+    }
+
+    .space__posts--list {
+        background-color: var(--dark-1);
+    }
+
+    .chat-room__grid {
+        background-color: var(--dark-1);
+    }
+
+    /* messages to me */
+    .message__text {
+        background-color: var(--dark-2);
+    }
+
+    /* messages from me */
+    .message--sent .message__text {
+        background-color: #345678;  
+    }
+
+    .message__date span {
+        background-color: var(--dark-0);
+        color: var(--text-secondary);
+    }
+
+    .user-menu .dropdown-menu__header {
+        background-color: var(--dark-1);
+    }
+
+    .dropdown-menu__inside {
+        background-color: var(--dark-1);
+    }
+
+    .bg-white {
+        background-color: var(--dark-0);
+    }
+
+    .tippy-popper {
+        background-color: var(--dark-0);
+    }
+}
