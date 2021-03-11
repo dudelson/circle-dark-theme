@@ -93,7 +93,7 @@
     .trix-v2 .react-trix-editor-container .toolbar {
         background-color: var(--dark-0);
     }
-    
+
     .trix-v2 .trix-content {
         color: white;
     }
@@ -159,6 +159,10 @@
 
     .bg-white {
         background-color: var(--dark-0);
+    }
+    
+    .member-card__inside {
+        background-color: var(--dark-1);
     }
 
     .tippy-popper {
