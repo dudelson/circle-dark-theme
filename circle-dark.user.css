@@ -165,6 +165,10 @@
         background-color: var(--dark-1);
     }
 
+    .chat-room__text-editor .message-text-box {
+        color: var(--text-body);
+    }
+
     .tippy-popper {
         background-color: var(--dark-0);
     }
